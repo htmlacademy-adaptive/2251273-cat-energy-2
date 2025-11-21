@@ -1,0 +1,17 @@
+.slider {
+  align-items: center;
+  min-width: $mobile-width;
+  background-color: #f0f0f0;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    min-width: $desktop-width;
+  }
+}

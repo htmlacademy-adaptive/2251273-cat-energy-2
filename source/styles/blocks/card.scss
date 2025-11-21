@@ -1,0 +1,38 @@
+.card__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+
+  color: $main-color-text;
+
+  text-transform: uppercase;
+}
+
+.card__info-list {
+  @include list-reset;
+}
+
+.card__info-key,
+.card__info-value {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0%;
+
+  color: $special-color-text;
+}
+
+.card__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+
+  color: $main-color-text;
+
+  text-transform: uppercase;
+}

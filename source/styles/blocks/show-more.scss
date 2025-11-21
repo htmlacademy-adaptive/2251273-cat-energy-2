@@ -1,0 +1,33 @@
+.show-more__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+
+  color: $tint-color-text;
+
+  text-transform: uppercase;
+}
+
+.show-more__text {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0%;
+
+  color: $special-color-text;
+}
+
+.show-more__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+
+  color: $special-color-text;
+
+  text-transform: uppercase;
+}

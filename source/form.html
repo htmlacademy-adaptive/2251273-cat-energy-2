@@ -45,12 +45,12 @@
   </header>
   <main class="page__main main">
     <section class="main__form form">
-      <h2 class="visually-hidden">Подбор программы</h2>
+      <h2 class="visually-hidden">Подбор программы Cat Energy</h2>
       <p class="form__title">Подбор программы</p>
       <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="form__container" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Информация о коте</legend>
+          <legend class="form__legend visually-hidden">Информация о коте</legend>
           <label class="form__label" for="cat-name">
             <span class="form__label-name">Имя:*</span>
             <input class="form__input" type="text" placeholder="Введите имя кота" name="cat-name" id="cat-name"
@@ -68,7 +68,7 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Выбор программы</legend>
+          <legend class="form__legend visually-hidden">Выбор программы</legend>
           <label class="form__label" for="program-slim">
             <input class="form__radio" type="radio" name="program" id="program-slim" value="program-slim" checked>
             <span class="form__radio-mark"></span>
@@ -86,7 +86,7 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Информация о владельце</legend>
+          <legend class="form__legend">Контактные данные (владельца кота)</legend>
           <label class="form__label" for="email-owner">
             <span class="form__label-name">E-mail:*</span>
             <input class="form__input" type="email" name="email-owner" id="email-owner" placeholder="Введите e-mail"
@@ -104,7 +104,7 @@
             placeholder="Расскажите обо всех повАдках кота"></textarea>
         </fieldset>
         <fieldset class="form__fieldset ">
-          <legend class="form__legend">Дополнительные вопросы</legend>
+          <legend class="form__legend">Дополнительно</legend>
           <label class="form__label form__label--checkbox" for="sugar">
             <input class="form__checkbox" type="checkbox" name="sugar" id="sugar" checked>
             <span class="form__checkbox-mark"></span>
@@ -138,7 +138,9 @@
     </section>
   </main>
   <footer class="page__footer footer">
-    <a class="footer__logo" href="index.html">LoGo</a>
+    <a class="footer__logo" href="index.html">
+      <img src="./images/logo/footer-logo.svg" alt="Логотип Cat Energy" width="128" height="24">
+    </a>
     <ul class="footer__social social">
       <li class="social__item">
         <a class="social__link" href="#" aria-label="Вконтакте">
