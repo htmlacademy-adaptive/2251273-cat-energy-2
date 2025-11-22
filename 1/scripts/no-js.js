@@ -1,0 +1,1 @@
+var e=document.querySelector(".header__button"),o=document.querySelector(".navigation");var t=()=>{e.classList.add("header__button--close"),e.classList.remove("header__button--open"),o.classList.add("navigation--close"),o.classList.remove("navigation--open")};var n=document.querySelectorAll(".no-js"),l=()=>{t(),n.forEach(s=>{s.classList.remove("no-js")})};export{l as checkNoJs};
