@@ -1,0 +1,8 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  width: calc($mobile-width - 40px);
+  padding: 20px 0 19px;
+}

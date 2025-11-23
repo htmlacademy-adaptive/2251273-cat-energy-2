@@ -1,7 +1,50 @@
 .header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
   align-items: center;
   width: $mobile-width;
-  background-color: #f0f0f0;
+}
+
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 21px 9px 20px;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+.header__button {
+  width: 24px;
+  height: 24px;
+  background-color: $main-color-bg;
+  border: none;
+}
+
+.header__button--open {
+  background-image: url("../../icons/stack.svg#menu_menu-close");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__button--close {
+  background-image: url("../../icons/stack.svg#menu_menu-open");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__button--close + .navigation {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

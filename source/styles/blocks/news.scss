@@ -1,41 +1,89 @@
 .news {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: $mobile-width;
-  background-color: #f0f0f0;
+  padding: 0 20px 40px;
+}
+
+.news__title {
+  position: relative;
+  align-self: start;
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: $main-color-text;
+}
+
+.news__title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100vw;
+  top: 9px;
+  right: -40px;
+  height: 2px;
+  background-color: inherit;
+  box-shadow: 100vw 0 0 0 $special-color-bg;
+}
+
+.news__description {
+  margin: 0;
+  padding: 33px 0 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.news__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 23px 0 0;
 }
 
 .news__input {
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 14px;
+  width: 100%;
+  padding: 13px 12px 12px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 30px;
   letter-spacing: 0%;
-
   color: $special-color-text;
-
   text-transform: uppercase;
+  border: 1px solid $auxiliary-color-border;
 }
 
 .news__button {
+  padding: 15px 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0%;
-
-  color: $main-color-text;
-
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: $secondary-color-text;
+  background-color: $special-color-bg;
 }
 
-@media (min-width: $tablet-width) {
-  .news {
-    width: $tablet-width;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .news {
+//     width: $tablet-width;
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  .news {
-    width: $desktop-width;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .news {
+//     width: $desktop-width;
+//   }
+// }

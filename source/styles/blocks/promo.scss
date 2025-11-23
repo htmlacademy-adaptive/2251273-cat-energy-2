@@ -1,9 +1,53 @@
+.promo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  width: 280px;
+  height: 290px;
+  margin: 33px 0 0;
+  padding: 0;
+  background-color: $special-color-bg;
+  background-image:
+    linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../images/promo/promo-mobile@1x.webp") 1x,
+      url("../../images/promo/promo-mobile@2x.webp") 2x,
+      url("../../images/promo/promo-mobile@1x.png") 1x,
+      url("../../images/promo/promo-mobile@2x.png") 2x
+    );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -35px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: $secondary-color-border;
+}
+
+.promo__icon {
+  transform: translateY(58px);
+}
+
 .promo__title {
+  display: flex;
+  width: 161px;
+  margin: 0;
+  padding: 0 0 43px;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0%;
-
-  color: $main-color-text;
+  text-align: center;
+  color: $secondary-color-text;
 }
