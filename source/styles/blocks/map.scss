@@ -4,16 +4,16 @@
   width: 100%;
 }
 
+.map--catalog {
+  background-color: $secondary-color-bg;
+}
+
 .map__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-self: center;
   width: $mobile-width;
   padding: 27px 20px 25px;
-}
-
-.map__wrapper--catalog {
-  background-color: $secondary-color-bg;
 }
 
 .map__title {
