@@ -43,3 +43,46 @@
   border-top: 2px solid $main-color-border;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation__list {
+    position: relative;
+    flex-flow: row wrap;
+    max-height: 100vh;
+  }
+
+  .navigation > .navigation__list {
+    position: relative;
+    justify-content: end;
+    gap: 13px;
+    max-height: 100vh;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    padding: 10px 10px 13px;
+    border: none;
+  }
+
+  .navigation__link--active {
+    position: relative;
+  }
+
+  .navigation__link--active::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 3px;
+    left: 10px;
+    right: 10px;
+    height: 2px;
+    background-color: $special-color-bg;
+  }
+}

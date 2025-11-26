@@ -112,11 +112,74 @@
   background-image: url("../../icons/stack.svg#icon-arrow");
 }
 
-// @media (min-width: $tablet-width) {
-//   .programms {
-//     width: $tablet-width;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  .programms {
+    width: $tablet-width;
+    padding: 0 30px;
+  }
+
+  .programms__list {
+    gap: 30px;
+  }
+
+  .programms__item {
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 10px 55px;
+    padding: 72px 63px 57px 52;
+  }
+
+  .programms__wrapper {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    width: 200px;
+    height: 200px;
+    margin: 20px 0 0;
+  }
+
+  .programms__image--slim {
+    width: 140px;
+    height: 194px;
+    top: 49%;
+    left: 50%;
+  }
+
+  .programms__image--pro {
+    width: 268px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+  }
+
+  .programms__title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 5px 0 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .programms__description {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 15px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programms__description::after {
+    display: none;
+  }
+
+  .programms__button {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    gap: 27px;
+    padding: 41px 0 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 
 // @media (min-width: $desktop-width) {
 //   .programms {
