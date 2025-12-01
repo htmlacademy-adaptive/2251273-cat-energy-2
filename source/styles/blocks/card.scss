@@ -137,8 +137,34 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .card {
-//     width: $desktop-width;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .card {
+    padding: 135px 38px 41px;
+  }
+
+  .card.card--show-more {
+    padding: 0 38px 41px;
+  }
+
+  .card__title {
+    width: 80%;
+    margin: 0;
+  }
+
+  .card__info-list {
+    gap: 13px;
+    margin: 10px 0 18px;
+  }
+
+  .card__info-item {
+    padding: 0;
+  }
+
+  .card__info-item::after {
+    bottom: -9px;
+  }
+
+  .card__button {
+    margin: 15px 0 0;
+  }
+}

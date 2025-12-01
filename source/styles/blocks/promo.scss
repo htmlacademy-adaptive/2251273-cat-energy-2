@@ -57,8 +57,8 @@
     flex-direction: row;
     align-items: center;
     width: 707px;
-    height: 200px;
-    margin: 70px 0 0;
+    height: 199px;
+    margin: 69px 0 0;
     padding: 42px 124px 0 30px;
     background-image:
       linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
@@ -68,6 +68,9 @@
         url("../../images/promo/promo-tablet@1x.png") 1x,
         url("../../images/promo/promo-tablet@2x.png") 2x
       );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .promo::after {
@@ -82,5 +85,36 @@
 
   .promo__title {
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    flex-direction: column;
+    width: 245px;
+    min-height: 288px;
+    margin: 0;
+    padding: 0;
+    background-image:
+      linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/promo/promo-desctop@1x.webp") 1x,
+        url("../../images/promo/promo-desktop@2x.webp") 2x,
+        url("../../images/promo/promo-desktop@1x.png") 1x,
+        url("../../images/promo/promo-desktop@2x.png") 2x
+      );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .promo__icon {
+    height: 83px;
+    transform: translateY(56px) translateX(0);
+  }
+
+  .promo__title {
+    text-align: center;
+    padding: 0 0 42px;
   }
 }

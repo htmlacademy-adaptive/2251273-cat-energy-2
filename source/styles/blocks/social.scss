@@ -20,6 +20,8 @@
 
 @media (min-width: $tablet-width) {
   .social {
+    width: fit-content;
+    place-self: center center;
     border: none;
   }
 }

@@ -29,12 +29,15 @@
 
   .footer__wrapper {
     width: $tablet-width;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
     justify-content: space-between;
     padding: 37px 20px 40px;
   }
 
   .footer__logo {
+    width: fit-content;
     justify-content: start;
     padding: 20px 11px 19px;
   }
@@ -42,8 +45,8 @@
 
 @media (min-width: $desktop-width) {
   .footer__wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
     width: $desktop-width;
     padding: 48px 101px 70px 99px;
   }

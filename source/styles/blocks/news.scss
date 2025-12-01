@@ -79,7 +79,7 @@
 @media (min-width: $tablet-width) {
   .news {
     width: $tablet-width;
-    padding: 0 30px;
+    padding: 2px 30px;
   }
 
   .news__title {
@@ -117,12 +117,42 @@
     justify-content: center;
     align-items: center;
     gap: 0;
-    padding: 24px 38px 80px;
+    padding: 24px 38px 77px;
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .news {
-//     width: $desktop-width;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .news {
+    width: $desktop-width;
+    padding: 17px 69px 25px;
+  }
+
+  .news__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .news__title::before {
+    top: 18px;
+  }
+
+  .news__title::after {
+    top: 18px;
+  }
+
+  .news__description {
+    width: 100%;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 10px 0 0;
+  }
+
+  .news__form {
+    display: grid;
+    grid-template-columns: 496px 256px;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 24px 38px 77px;
+  }
+}

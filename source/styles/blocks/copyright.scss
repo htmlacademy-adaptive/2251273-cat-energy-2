@@ -9,6 +9,8 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
+    width: fit-content;
+    place-self: center end;
     justify-content: end;
     gap: 23px;
     padding: 20px 9px 19px;
