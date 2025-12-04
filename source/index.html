@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <title>Cat Energy - Главная</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Cat Energy - Корм который помогает котам сбросить вес">
   <!-- preload -->
-  <link rel="preload" href="./styles/styles.css" as="style" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/oswald/Oswald-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./styles/styles.css" as="style">
+  <link rel="preload" href="./fonts/oswald/Oswald-Regular.woff2" as="font"  crossorigin="anonymous">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font"  crossorigin="anonymous">
+  <link rel="preload" href="./images/background/index-background-mobile@2x.webp" as="image" type="image/webp" fetchpriority="high" >
+  <link rel="preload" href="./images/background/index-background-mobile@2x.jpg" as="image" type="image/webp" fetchpriority="high" >
   <!-- style -->
   <link rel="stylesheet" href="./styles/styles.css">
   <!-- favicon -->
@@ -18,6 +21,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
   <link rel="manifest" href="./site.webmanifest">
+  <script src="./scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -74,7 +78,7 @@
           srcset="./images/hero/tablet-image-hero@1x.png 1x, ./images/hero/tablet-image-hero@2x.png 2x"
           type="image/jpeg" width="709" height="609">
         <img class="hero__image" src="./images/hero/mobile-image-hero@1x.png" srcset="./images/hero/mobile-hero@2x.png"
-          alt="Hero image" width="280" height="270" loading="lazy">
+          alt="Hero image" width="280" height="270" fetchpriority="high">
       </picture>
       <a class="hero__button" href="./form.html">Подобрать программу</a>
     </section>
@@ -219,10 +223,8 @@
         </p>
       </div>
       <div class="map__container">
-        <iframe class="map__mobile no-js"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa1871c134b734bf6b0c3ea31a3a74c040d530c4a3d637cc10aa00b43f8bad08b&amp;source=constructor"></iframe>
-        <iframe class="map__tablet no-js"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Accfb0b6bacd1ddf91909894d9c56fdf406566682e47fe284f293f4cb62531f6a&amp;source=constructor"></iframe>
+        <iframe class="map__mobile no-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1259.0424785995926!2d30.319008288351228!3d59.93869138264811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xc7af30764648c6b1!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINC0LiAxOS84LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1764858764467!5m2!1sru!2sru"  height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта"></iframe>
+        <iframe class="map__tablet no-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1259.0424785995926!2d30.319008288351228!3d59.93869138264811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xc7af30764648c6b1!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINC0LiAxOS84LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1764858764467!5m2!1sru!2sru" width="100"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта"></iframe>
       </div>
     </section>
   </main>
@@ -264,7 +266,6 @@
       </a>
     </div>
   </footer>
-  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
