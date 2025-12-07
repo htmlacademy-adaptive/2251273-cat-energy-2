@@ -1,8 +1,8 @@
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: relative;
+  gap: 0;
   width: 100%;
   min-height: 500px;
   margin: 0 auto;
@@ -14,7 +14,7 @@
   align-items: center;
   gap: 25px;
   min-height: 302px;
-  padding: 27px 20px 0;
+  padding: 27px 20px 150px;
   background-color: $special-color-bg;
   background-image:
     linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
@@ -53,9 +53,9 @@
 }
 
 .hero__image {
-  position: absolute;
+  position: relative;
   display: block;
-  top: 167px;
+  margin-top: -135px;
   left: 50%;
   width: 280px;
   height: 270px;
@@ -68,7 +68,7 @@
   align-self: center;
   width: calc($mobile-width - 40px);
   padding: 10px 0;
-  margin: 20px;
+  margin: 3px 20px 20px;
   background-color: $special-color-bg;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -133,6 +133,7 @@
     left: 0;
     width: 709px;
     height: 609px;
+    margin-top: 0;
     transform: none;
   }
 

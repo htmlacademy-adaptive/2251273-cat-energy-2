@@ -6,7 +6,7 @@
   align-items: center;
   gap: 18px;
   width: 280px;
-  height: 290px;
+  min-height: 290px;
   margin: 20px 0 0;
   padding: 0;
   background-color: $special-color-bg;
@@ -35,7 +35,8 @@
 }
 
 .promo__icon {
-  transform: translateY(58px);
+  margin: 58px 0 0;
+  flex-shrink: 0;
 }
 
 .promo__title {
@@ -57,7 +58,7 @@
     flex-direction: row;
     align-items: center;
     width: 707px;
-    height: 199px;
+    min-height: 199px;
     margin: 69px 0 0;
     padding: 42px 124px 0 30px;
     background-image:
@@ -81,6 +82,7 @@
     width: 80px;
     height: 82px;
     transform: translateY(-23px) translateX(48px);
+    margin: 0;
   }
 
   .promo__title {
@@ -112,7 +114,8 @@
 
   .promo__icon {
     height: 83px;
-    transform: translateY(56px) translateX(0);
+    transform: translateY(0) translateX(0);
+    margin: 56px 0 0;
   }
 
   .promo__title {

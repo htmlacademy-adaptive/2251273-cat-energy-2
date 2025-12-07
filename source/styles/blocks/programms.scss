@@ -108,6 +108,7 @@
 .programms__button::after {
   content: "";
   display: block;
+  flex-shrink: 0;
   width: 24px;
   height: 12px;
   background-image: url("../../icons/stack.svg#icon-arrow");
