@@ -1,0 +1,127 @@
+.navigation {
+  position: relative;
+  width: 100%;
+}
+
+.navigation__list {
+  @include list-reset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $main-color-bg;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.navigation--close > .navigation__list {
+  max-height: 0;
+}
+
+.navigation.no-js > .navigation__list {
+  position: relative;
+  max-height: 100vh;
+}
+
+.navigation__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: $main-color-text;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: 2px solid $main-color-border;
+  cursor: pointer;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
+.navigation__link:active {
+  opacity: 0.3;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation > .navigation__list {
+    position: relative;
+    flex-flow: row wrap;
+    justify-content: end;
+    gap: 24px;
+    max-height: 100vh;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    padding: 10px 5px 13px;
+    border: none;
+  }
+
+  .navigation__link--active {
+    position: relative;
+  }
+
+  .navigation__link--active::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 3px;
+    left: 5px;
+    right: 5px;
+    height: 2px;
+    background-color: $special-color-bg;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .navigation > .navigation__list {
+    gap: 0 33px;
+  }
+
+  .navigation__list {
+    background-color: inherit;
+  }
+
+  .navigation__link {
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .header--main .navigation__link {
+    padding: 10px 0;
+    color: $secondary-color-text;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .navigation__link--active::after {
+    left: 0;
+    right: 0;
+  }
+
+  .header--main .navigation__link--active::after {
+    left: 0;
+    right: 0;
+    background-color: $main-color-bg;
+  }
+}

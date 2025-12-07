@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Виталий Еченко](https://up.htmlacademy.ru/adaptive-individual/2/user/2251273).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 

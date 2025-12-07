@@ -1,0 +1,47 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  width: calc($mobile-width - 40px);
+  padding: 20px 0 19px;
+}
+
+.copyright:hover,
+.copyright:focus {
+  outline: none;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
+
+.copyright__text {
+  color: $special-color-text;
+}
+
+.copyright__icon {
+  color: $primary-color-bg;
+}
+
+.copyright:hover .copyright__icon,
+.copyright:focus .copyright__icon {
+  color: $special-color-bg;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .copyright {
+    width: fit-content;
+    place-self: center end;
+    justify-content: end;
+    gap: 23px;
+    padding: 20px 9px 19px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .copyright {
+    width: fit-content;
+    place-self: center end;
+  }
+}

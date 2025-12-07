@@ -1,0 +1,44 @@
+.social {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  gap: 24px;
+  width: calc($mobile-width - 40px);
+  padding: 20px 20px 19px;
+  border-top: 1px solid $auxiliary-color-border;
+  border-bottom: 1px solid $auxiliary-color-border;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color-bg;
+}
+
+.social__link:hover,
+.social__link:focus {
+  outline: none;
+  color: $special-color-bg;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .social {
+    width: fit-content;
+    place-self: center center;
+    border: none;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .social {
+    width: fit-content;
+    place-self: center center;
+  }
+}

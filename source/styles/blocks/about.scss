@@ -1,0 +1,126 @@
+.about {
+  align-items: center;
+  width: $mobile-width;
+  padding: 20px 20px 49px;
+}
+
+.about__title {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: $main-color-text;
+}
+
+.about__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0 0;
+}
+
+.about__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about__wrapper {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $special-color-bg;
+}
+
+.about__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about__description {
+  margin: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: $special-color-text;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .about {
+    width: $tablet-width;
+    padding: 45px 30px 7px;
+  }
+
+  .about__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .about__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 60px;
+    padding: 72px 0 0;
+    counter-reset: count 0;
+  }
+
+  .about__item {
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 31px;
+    min-height: 280px;
+    counter-increment: count 1;
+  }
+
+  .about__item::before {
+    content: counter(count);
+    position: absolute;
+    bottom: 74px;
+    left: 115px;
+    width: 113px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 210px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: $primary-color-text;
+    z-index: -1;
+  }
+
+  .about__wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about__description {
+    width: 75%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .about {
+    width: $desktop-width;
+    padding: 31px 110px 7px;
+  }
+
+  .about__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px 80px;
+  }
+
+  .about__description {
+    width: 100%;
+  }
+}

@@ -1,5 +1,114 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: $mobile-width;
+  padding: 13px 21px 9px 20px;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+.header__logo:hover,
+.header__logo:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+.header__logo:active {
+  opacity: 0.6;
+}
+
+.header__button {
+  width: 24px;
+  height: 24px;
+  background-color: $main-color-bg;
+  border: none;
+}
+
+.header__button--open {
+  background-image: url("../../icons/stack.svg#menu_menu-close");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__button--close {
+  background-image: url("../../icons/stack.svg#menu_menu-open");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__button--close + .navigation {
+  display: none;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .header {
+    width: $tablet-width;
+    flex-flow: row nowrap;
+    padding: 25px 30px;
+  }
+
+  .header__wrapper {
+    width: fit-content;
+    padding: 0;
+  }
+
+  .header__logo {
+    justify-content: start;
+    gap: 13px;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__navigation {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 610px);
+    justify-content: center;
+    width: 100%;
+    padding: 55px 0 30px;
+  }
+
+  .header--main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 694px;
+    z-index: -1;
+    background-image:
+      linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/background/index-background-desktop@1x.webp") 1x,
+        url("../../images/background/index-background-desktop@2x.webp") 2x,
+        url("../../images/background/index-background-desktop@1x.png") 1x,
+        url("../../images/background/index-background-desktop@2x.png") 2x
+      );
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
 }
