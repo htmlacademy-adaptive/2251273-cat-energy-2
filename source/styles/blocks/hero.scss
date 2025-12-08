@@ -143,6 +143,7 @@
     left: 100px;
     align-self: flex-start;
     width: fit-content;
+    max-width: calc($tablet-width / 2);
     padding: 14px 26px;
     font-size: 20px;
     line-height: 26px;
@@ -193,7 +194,10 @@
   }
 
   .hero__button {
-    bottom: 164px;
-    left: 170px;
+    position: relative;
+    top: -258px;
+    left: 141px;
+    margin: 20px;
+    max-width: calc($desktop-width / 4);
   }
 }
