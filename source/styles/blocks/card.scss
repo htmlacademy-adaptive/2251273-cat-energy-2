@@ -33,6 +33,30 @@
   object-fit: cover;
 }
 
+.card__title-link {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-decoration: none;
+}
+
+.card__title-link:hover,
+.card__title-link:focus {
+  outline: none;
+  opacity: 0.8;
+}
+
+
+.card__title-link:hover > .card__title,
+.card__title-link:focus > .card__title {
+  color: $special-color-bg;
+  cursor: pointer;
+}
+
+.card__title-link:active {
+  opacity: 0.3;
+}
+
 .card__title {
   width: 60%;
   margin: 0 0 5px;

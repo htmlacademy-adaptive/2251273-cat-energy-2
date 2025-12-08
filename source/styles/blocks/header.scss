@@ -56,6 +56,10 @@
   display: none;
 }
 
+.header__button.no-js {
+  display: none;
+}
+
 @media screen and (min-width: $tablet-width) {
   .header {
     width: $tablet-width;
