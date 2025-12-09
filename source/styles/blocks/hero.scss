@@ -98,6 +98,7 @@
     gap: 21px;
     width: $tablet-width;
     min-height: fit-content;
+    margin: 0 0 -99px;
     padding: 30px 30px 0;
   }
 
@@ -138,9 +139,9 @@
   }
 
   .hero__button {
-    position: absolute;
-    bottom: 506px;
-    left: 100px;
+    position: relative;
+    bottom: 604px;
+    left: 70px;
     align-self: flex-start;
     width: fit-content;
     max-width: calc($tablet-width / 2);
@@ -160,6 +161,7 @@
     gap: 0 50px;
     width: $desktop-width;
     min-height: 545px;
+    margin: 0 0 -94px;
     padding: 0 30px;
   }
 
